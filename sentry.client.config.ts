@@ -10,7 +10,7 @@ Sentry.init({
             colorScheme: "system",
             showBranding: false, // hide "powered by Sentry"
             triggerLabel: "Report a Bug", // button text
-            triggerPosition: "bottom-right", // "bottom-right" | "bottom-left"
+            triggerPosition: "bottom-left", // "bottom-right" | "bottom-left"
         }),
     ],
 
