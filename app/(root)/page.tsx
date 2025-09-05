@@ -23,7 +23,7 @@ export default async function Home({
         <>
             <section className="pink_container">
                 <h1 className="heading">
-                    Pitch Your Story, <br /> Connect with Entrepreneurs
+                    Pitch Your Story, <br /> share interesting blogs
                 </h1>
                 <p className="sub-heading !max-w-3xl">
                     Create Blogs, Share Ideas and Interesting Topics on
