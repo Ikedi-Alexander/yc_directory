@@ -23,18 +23,18 @@ export default async function Home({
         <>
             <section className="pink_container">
                 <h1 className="heading">
-                    Pitch Your Startup, <br /> Connect with Entrepreneurs
+                    Pitch Your Story, <br /> Connect with Entrepreneurs
                 </h1>
                 <p className="sub-heading !max-w-3xl">
-                    Submit Ideas, Vote on Pitches and Get Noticed in Virtual
-                    Competitions.
+                    Create Blogs, Share Ideas and Interesting Topics on
+                    Politics, Health, Tech and More.
                 </p>
 
                 <SearchForm query={query} />
             </section>
             <section className="section_container">
                 <p className="text-30-semibold">
-                    {query ? `Search results for "${query}"` : "All Startups"}
+                    {query ? `Search results for "${query}"` : "All Pitches"}
                 </p>
                 <ul className="mt-7 card_grid">
                     {posts?.length > 0 ? (
@@ -43,7 +43,7 @@ export default async function Home({
                         ))
                     ) : (
                         <p className="no-results">
-                            No startups found. Please try a different search.
+                            No pitches found. Please try a different search.
                         </p>
                     )}
                 </ul>

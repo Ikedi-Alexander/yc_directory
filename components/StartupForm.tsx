@@ -33,8 +33,7 @@ const StartupForm = () => {
             if (result.status === "SUCCESS") {
                 toast({
                     title: "Success",
-                    description:
-                        "Your startup has been submitted successfully!",
+                    description: "Your Pitch has been submitted successfully!",
                 });
 
                 router.push(`/startup/${result._id}`);
@@ -89,7 +88,7 @@ const StartupForm = () => {
                     name="title"
                     className="startup-form_input"
                     required
-                    placeholder="Startup Title"
+                    placeholder="Pitch Title"
                 />
 
                 {errors.title && (
@@ -106,7 +105,7 @@ const StartupForm = () => {
                     name="description"
                     className="startup-form_textarea"
                     required
-                    placeholder="Startup Description"
+                    placeholder="Pitch Description"
                 />
 
                 {errors.description && (
@@ -123,7 +122,7 @@ const StartupForm = () => {
                     name="category"
                     className="startup-form_input"
                     required
-                    placeholder="Startup Category (eg. Tech, Health, Cars, Education...)"
+                    placeholder="Pitch Category (eg. Tech, Health, Cars, Education...)"
                 />
 
                 {errors.category && (
@@ -140,7 +139,7 @@ const StartupForm = () => {
                     name="link"
                     className="startup-form_input"
                     required
-                    placeholder="Startup Image URL"
+                    placeholder="Pitch Image URL"
                 />
 
                 {errors.link && (
@@ -160,8 +159,7 @@ const StartupForm = () => {
                     height={300}
                     style={{ borderRadius: 20, overflow: "hidden" }}
                     textareaProps={{
-                        placeholder:
-                            "Briefly describe your idea and what problem it solves",
+                        placeholder: "Briefly describe your story",
                     }}
                     previewOptions={{ disallowedElements: ["style"] }}
                 />
