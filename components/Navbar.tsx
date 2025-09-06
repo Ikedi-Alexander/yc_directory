@@ -48,7 +48,7 @@ const Navbar = async () => {
                                 <Image
                                     src={session?.user?.image || ""}
                                     alt={session?.user?.name || ""}
-                                    className="size-10"
+                                    className="size-10 rounded-full"
                                     width={50}
                                     height={50}
                                     title={session?.user?.name || ""}
